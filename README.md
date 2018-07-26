@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+# microfinanceshariah
+Micro Finance application based on Shariah
+
 Portofolio jasa keuangan simpan pinjam berbasis syariah
 feature
 1. user login & signup 
@@ -105,7 +107,4 @@ Pemodelan databasenya
  - Laporan Distribusi
  - Laporan Basil Anggota
  - Laporan Laba Bersih
-=======
-# microfinanceshariah
-Micro Finance application based on Shariah
->>>>>>> e226fde3d08d9d81d3d31a827df09e84d0ce4b87
+

@@ -1,0 +1,101 @@
+PENJELASAN CARA PENGHITUNGAN BAGI HASIL SIMPANAN
+Pada sistem keuangan syariah tidak menggunakan sistem bunga dan suku bunga, tetapi menggunakan sistem bagi hasil dan nisbah. 
+Selain istilahnya berbeda cara perhitungannya pun berbeda. Jadi tidak benar bila bagi hasil itu hanya pengganti istilah bunga saja.
+Perbedaan antara bunga dan bagi hasil
+Bunga :
+adalah jasa yang diberikan atas penempatan dana ( tabungan). Cara penghitungannya cukup simpel yaitu suku bunga dikalikan dengan saldo ( saldo rata-rata atau saldo terendah).
+Dalam sistem ini suku bunga telah ditetapkan di awal sehingga besar kecilnya bunga yang diterima oleh penabung tidak dipengaruhi oleh besar kecilnya pendapatan dari lembaga.
+Contoh :
+Kita menabung di sebuah bank sebesar Rp. 1.000.000,- dan mengendap selama sebulan penuh. Suku bunga tabungan pada bank tersebut adalah 5% setahun (5 : 12) => 0.416667% per bulan . Maka besarnya bunga yang akan diterima adalah :
+=> 0.41666 x 1.000.000 = 4.166,7
+Bagi hasil :
+Adalah jasa yang diberikan atas penempatan dana yang dikelola oleh lembaga untuk pembiayaan. Cara penghitungannya tidak berdasarkan suku bunga melainkan berdasarkan nisbah. Nisbah merupakan porsi bagi hasil terhadap pendapatan yang diterima oleh lembaga.
+Besar kecilnya bagi hasil yang diterima penabung akan tergantung pada besarnya nisbah dan pendapatan yang diperoleh oleh lembaga.
+Mari kita simak penjelasan di bawah ini :
+A. Nisbah (porsi bagi hasil ) Simpanan, contohnya sbb :
+Anggota BMT/Koperasi
+----------------------------------------------------------------------------
+1. Simp Mudharabah : 30 % 70 %
+2. Simp Haji : 35 % 65 %
+3. Simp Umroh : 32 % 68 %
+4. Simp Qurban : 32 % 68 %
+5. Simp Pendidikan : 30 % 70 %
+6. Simp Berjangka 1 bln : 30 % 70 %
+7. Simp Berjangka 3 bln : 35 % 65 %
+8. Simp Berjangka 6 bln : 40 % 60 %
+9. Simp Berjangka 12 bln : 45 % 55 %
+Ket : Prosentase di atas adalah porsi untuk penabung (anggota)
+Mungkin secara spontan akan muncul pertanyaan di benak kita yaitu: kalau saya menabung Rp. 1.000.000,- maka saya akan mendapatkan bagi hasil sebesar 30% x 1.000.000,- = 300.000,- per bulan ???
+Maka jawabannya tidak. Lantas bagaimana cara menghitungnya…..??
+Ikuti penjelasan di bawah ini dengan cermat agar bisa memahami…….
+Untuk menghitung bagi hasil simpanan, ada langkah-langkah atau prosedur yang harus dilalui.
+Tetapi sebelumnya perlu dipahami pengertian antara Saldo akhir dan Saldo rata-rata harian simpanan :
+Saldo akhir simpanan : posisi akhir tabungan setelah ada transaksi / mutasi setoran ataupun penarikan.
+Saldo Rata-rata harian : rata-rata saldo yang mengendap pada tabungan selama 1 bulan. Jumlahnya bisa lebih besar atau lebih kecil daripada saldo akhir.
+Cara penghitungannya adalah besar saldo dikalikan lama mengendap dibagi jumlah hari dalam 1 bulan. ( rumit yaaa? Ya memang kalau dihitung secara manual ini membutuhkan waktu lama, tapi tenaaang semua ini sudah dihitung oleh program).
+Ini adalah prosedur untuk penghitungan bagi hasil :
+B. PROSES PERHITUNGAN SALDO RATA-RATA HARIAN SIMPANAN (SRH), PORSI, INDEX DAN BAGI HASIL SIMPANAN
+Proses ini dilakukan oleh program komputer dengan memasukkan angka pendapatan dalam bulan ini ( angka ini otomatis muncul pada saat akan proses SRH).
+Pendapatan yang dimaksud di sini bagaimana ??
+Jawab : Bila kita memberikan pembiayaan (pinjaman) kepada anggota maka kita akan mendapatkan bagi hasil ataupun margin, kemudian ditotal dalam satu bulan inilah yang dimaksudkan pendapatan.
+Setiap rekening simpanan anggota dihitung SRH nya kemudian dijumlahkan dan disimpan kedalam variabel-variabel.
+1. Contoh hasil dari perhitungan SRH berikut ini :
+Pendapatan bulan ini = MTP
+SRH Simp Mudharabah = JSRH1
+SRH Simp Haji = JSRH2
+SRH Simp Umroh = JSRH3
+SRH Simp Qurban = JSRH4
+SRH Simp Pendidikan = JSRH5
+SRH Simp Berjangka 1 bln = JSRH6
+SRH Simp Berjangka 3 bln = JSRH7
+SRH Simp Berjangka 6 bln = JSRH8
+SRH Simp Berjangka 12 bln= JSRH9
+Total SRH (TSRH) = JSRH1 + JSRH2 + JSRH3 + JSRH4 + JASRH5+
+JSRH6 + JSRH7 + JSRH8 + JSRH9
+2. Langkah selanjutnya adalah menghitung porsi bagi hasil untuk masing-masing simpanan :
+PORSI1 = JSRH1 / TSRH * MTP
+PORSI2 = JSRH2 / TSRH * MTP
+PORSI3 = JSRH3 / TSRH * MTP
+PORSI4 = JSRH4 / TSRH * MTP
+PORSI5 = JSRH5 / TSRH * MTP
+PORSI6 = JSRH6 / TSRH * MTP
+PORSI7 = JSRH7 / TSRH * MTP
+PORSI8 = JSRH8 / TSRH * MTP
+PORSI9 = JSRH9 / TSRH * MTP
+3. Kemudian mencari Index masing-masing Simpanan, di sinilah nisbah yang berupa prosentase di atas diaplikasikan ke dalam rumus :
+IDX1= (PORSI1 * 28 / 100) / JSRH1 
+IDX2= (PORSI2 * 35 / 100) / JSRH2
+IDX3= (PORSI3 * 32 / 100) / JSRH3
+IDX4= (PORSI4 * 32 / 100) / JSRH4
+IDX5= (PORSI5 * 30 / 100) / JSRH5
+IDX6= (PORSI6 * 30 / 100) / JSRH6
+IDX7= (PORSI7 * 35 / 100) / JSRH7
+IDX8= (PORSI8 * 40 / 100) / JSRH8
+IDX9= (PORSI9 * 45 / 100) / JSRH9
+Hasil akhir dari perhitungan rumus di atas akan menghasilkan angka yang disebut Index.
+Index ini berupa angka pecahan seperti : 0,0042666 atau angka yang lain (mirip seperti suku bunga pada sistem konvensional). Tetapi bedanya Index tersebut besarnya selalu bervariasi setiap bulannya bisa naik atau turun. Besar kecilnya Index sangat dipengaruhi oleh besarnya pendapatan pada bulan tersebut.
+4. Hitung Bagi Hasil Simpanan.
+Setelah itu baru bisa dihitung besarnya bagi hasil masing-masing simpanan, dengan rumus berikut ini :
+BASIL1= IDX1 * SRH1 
+BASIL2= IDX2 * SRH2
+BASIL3= IDX3 * SRH3
+BASIL4= IDX4 * SRH4
+BASIL5= IDX5 * SRH5
+BASIL6= IDX6 * SRH6
+BASIL7= IDX7 * SRH7
+BASIL8= IDX8 * SRH8
+BASIL9= IDX9 * SRH9
+Contoh penerapan rumus di atas dalam perhitungan bagi hasil :
+1. Simp Mudharabah : 0,0042666 x 1.000.000,- = …………..
+2. Simp Haji : 0,0047766 x 1.000.000,- = …………..
+3. Simp Umroh : 0,0043766 x 1.000.000,- = …………..
+4. Simp Qurban : 0,0042666 x 1.000.000,- = …………..
+5. Simp Pendidikan : 0,0043788 x 1.000.000,- = …………..
+6. Simp Berjangka 1 bln : 0,0043788 x 1.000.000,- = …………..
+7. Simp Berjangka 3 bln : 0,0042666 x 1.000.000,- = …………..
+8. Simp Berjangka 6 bln : 0,0050666 x 1.000.000,- = …………..
+9. Simp Berjangka 12 bln : 0,0052666 x 1.000.000,- = …………..
+5. Kesimpulan
+Cara perhitungan di atas sangatlah rumit, sehingga bila semua dilakukan secara manual berapa lama waktu yang dibutuhkan untuk mengerjakan tugas menghitung bagi hasil simpanan bila BMT sudah memiliki 1000 penabung ???
+Itulah salah alasan mengapa dalam pengelolaan BMT / Koperasi Simpan Pinjam Syariah sangatlah mutlak untuk menggunakan program aplikasi. Dengan menggunakan program aplikasi kita tidak perlu lagi pusing-pusing menghitung bagi hasil simpanan seperti di atas karena proses dengan program aplikasi hanya berlangsung dalam hitungan detik.
+Di samping itu banyak hal yang mungkin belum dipahami tentang istilah-istilah dan pengertian dalam sistem keuangan syariah, maka dari itu mari kita sama-sama belajar.
